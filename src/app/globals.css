@@ -71,34 +71,20 @@
   }
 }
 
-.scrollbar-custom::-webkit-scrollbar {
-  width: 10px; /* Scrollbar width */
-  scroll-behavior:smooth;
-}
-
-.scrollbar-custom::-webkit-scrollbar-track {
-  background: #1e1e1e; /* Dark background for track */
-  border-radius: 10px;
-  scroll-behavior:smooth;
-}
-
-.scrollbar-custom::-webkit-scrollbar-thumb {
-  background: #4a90e2; /* Scrollbar thumb color */
-  border-radius: 10px;
-  border: 2px solid #1e1e1e; /* Space around thumb */
-  scroll-behavior:smooth;
-}
-
-.scrollbar-custom::-webkit-scrollbar-thumb:hover {
-  background: #3578e5; /* Hover effect */
-  scroll-behavior:smooth;
-}
-
 /* Firefox scrollbar */
 .scrollbar-custom {
   scrollbar-width: thin;
   scrollbar-color: #cbfe00 transparent;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .scrollbar-custom {
+    scrollbar-width: none;
+    scrollbar-color: #cbfe00 transparent;
+    scroll-behavior: smooth;
+    
+  }
 }
 
 .tektur-font {

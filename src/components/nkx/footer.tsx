@@ -8,6 +8,7 @@ export function Footer() {
     "SOCIALS": [
       { name: "LinkedIn", href: "https://www.linkedin.com/", target: "_blank" },
       { name: "Email", href: "mailto:kiran18oct1991@gmail.com", target: "_blank" },
+      { name: "Contact", href: "/contact-us", target: "_blank" },
     ],
     "OTHER": [
       { name: "Privacy Policy", href: "privacy-policy" },
