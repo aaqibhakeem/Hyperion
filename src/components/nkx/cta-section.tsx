@@ -17,11 +17,6 @@ export function CTASection() {
   
   return (
     <section className="relative py-24 overflow-hidden mx-7">
-      {/* Background elements */}
-      <div className="absolute inset-0 bg-[#0f0f13]">
-        {/* Glowing effects */}
-        <div className="absolute bottom-1/3 left-1/3 w-80 h-80 rounded-full bg-[#cbfe00] blur-[150px] opacity-10" />
-      </div>
 
       <Container className="relative z-10">
         <CardContainer 

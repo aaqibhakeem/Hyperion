@@ -28,19 +28,16 @@ export function WhyUseNkx() {
   ];
 
   return (
-    <section id="features" className="relative py-24 overflow-hidden scroll-smooth mx-7">
-      <div className="absolute inset-0 bg-[#0f0f13]">
-        <div className="absolute bottom-0 right-1/4 w-60 h-60 rounded-full bg-[#cbfe00] blur-[150px] opacity-10" />
-      </div>
+    <section id="features" className="relative py-12 md:py-24 overflow-hidden scroll-smooth mx-2 md:mx-7">
 
       <Container className="relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-[#cbfe00]">
+        <div className="text-center mb-8 md:mb-16">
+          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-[#cbfe00]">
             Why use <span className="tektur-font text-[#cbfe00]">Nuvikronix</span> <span className="text-[#ffffff] tech-font"> Technologies</span> ?
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {features.map((feature, index) => (
             <div key={index} className="relative">
               <GlowingEffect
@@ -52,12 +49,12 @@ export function WhyUseNkx() {
                 variant="default"
                 disabled={false}
               />
-              <Card className="relative bg-zinc-900/60 backdrop-blur-sm border border-zinc-800 p-6 rounded-lg hover:border-[#cbfe00]/30 transition-colors">
-                <div className="bg-zinc-800/40 p-3 inline-block rounded-lg mb-4">
+              <Card className="relative bg-zinc-900/60 backdrop-blur-sm border border-zinc-800 p-4 md:p-6 rounded-lg hover:border-[#cbfe00]/30 transition-colors h-full">
+                <div className="bg-zinc-800/40 p-2 md:p-3 inline-block rounded-lg mb-3 md:mb-4">
                   {feature.icon}
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2">{feature.title}</h3>
-                <p className="text-zinc-400 text-sm">{feature.description}</p>
+                <h3 className="text-base md:text-lg font-semibold text-white mb-1 md:mb-2">{feature.title}</h3>
+                <p className="text-zinc-400 text-xs md:text-sm">{feature.description}</p>
               </Card>
             </div>
           ))}

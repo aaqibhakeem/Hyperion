@@ -21,9 +21,8 @@ export function Footer() {
       <div className="absolute inset-0 bg-[#0f0f13]" />
 
       <Container className="relative z-10">
-        <div className="gap-12 flex justify-around align-top">
-          {/* Logo and description */}
-          <div className="col-span-1 w-40">
+        <div className="gap-12 flex flex-col lg:flex-row justify-between lg:justify-around text-center lg:text-left align-top">
+          <div className="w-full lg:w-40">
             <Link href="/" className="inline-block text-2xl font-bold text-white mb-4">
               <span className="text-[#cbfe00] tektur-font">Nuvikronix</span> Technologies
             </Link>
@@ -53,8 +52,8 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-16 pt-8 border-t border-zinc-800 flex flex-col md:flex-row justify-center items-center">
-          <p className="text-zinc-500 text-sm mb-4 md:mb-0 text-right">
+        <div className="mt-12 pt-6 border-t border-zinc-800 flex flex-col md:flex-row justify-center items-center">
+          <p className="text-zinc-500 text-sm text-center lg:text-right">
             © {currentYear} Nuvikronix Technologies Inc. All rights reserved.
           </p>
           

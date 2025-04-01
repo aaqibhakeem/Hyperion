@@ -30,7 +30,7 @@ export function HeroSection() {
 
       <Container className="relative z-10 flex flex-col items-center justify-center text-center pt-20">
         <div className="max-w-4xl mx-auto justify-center items-center">
-          <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
             <span className="block text-[#ffffff]">A <Cover>Quantum Leap</Cover> Forward</span>
             <span className="block text-[#cbfe00]">For FinTech Innovation</span>
           </h1>

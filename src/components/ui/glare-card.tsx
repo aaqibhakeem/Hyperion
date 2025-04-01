@@ -1,6 +1,7 @@
 "use client"
 import { cn } from "@/lib/utils";
 import { useRef } from "react";
+import { useRouter } from "next/navigation";
 
 export const GlareCard = ({
   children,
@@ -13,6 +14,7 @@ export const GlareCard = ({
   width?: string;  
   aspectRatio?: string | null;
 }) => {
+  const router = useRouter();
   const isPointerInside = useRef(false);
   const refElement = useRef<HTMLDivElement>(null);
   const state = useRef({
@@ -75,6 +77,10 @@ export const GlareCard = ({
     width, // Use provided width
     aspectRatio ? aspectRatio : "" // Use provided aspect ratio if available
   );
+
+  const handleClick = () => {
+    router.push('/contact-us')
+  };
   
   return (
     <div
@@ -127,6 +133,7 @@ export const GlareCard = ({
           refElement.current?.style.setProperty("--r-y", `0deg`);
         }
       }}
+      onClick={handleClick}
     >
       <div className="h-full grid will-change-transform origin-center transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] [transform:rotateY(var(--r-x))_rotateX(var(--r-y))] rounded-[var(--radius)] border border-slate-800 hover:[--opacity:0.6] hover:[--duration:200ms] hover:[--easing:linear] hover:filter-none overflow-hidden">
         <div className="w-full h-full grid [grid-area:1/1] mix-blend-soft-light [clip-path:inset(0_0_0_0_round_var(--radius))]">
