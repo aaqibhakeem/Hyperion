@@ -2,12 +2,16 @@
 
 🌍 **A cutting-edge web platform for Nuvikronix Technologies**, showcasing their revolutionary quantum computing solutions for the fintech industry. The website serves as a digital portal for their services, technological innovations, and industry leadership in quantum-powered financial technology.
 
+✨Access the [live link](https://nuvikronix.vercel.app) here. 
+
 ---
 
 ## 🔥 **Key Features**
 
 ✅ **Interactive UI Elements** – Modern design with responsive components and animations. 
+
 ✅ **Service Portfolio** – Exploration of quantum computing applications in finance. 
+
 ✅ **Contact Integration** – Streamlined communication channels for potential clients.
 
 ---
