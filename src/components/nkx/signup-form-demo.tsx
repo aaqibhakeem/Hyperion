@@ -37,7 +37,7 @@ export default function SignupFormDemo() {
         Get in touch with us and realize the true potential within your project.
       </h2>
 
-      <form className="my-8 quicksand-font" action="https://formsubmit.co/aqibhkeemclg@gmail.com" method="POST">
+      <form className="my-8 quicksand-font" action="https://formsubmit.co/kiran18oct1991@gmail.com" method="POST">
         <LabelInputContainer>
             {/* <input type="hidden" name="_captcha" value="false" /> */}
             <input type="hidden" name="_autoresponse" value="Your Submission has been successfully recorded. We will get back to you in a few days. Thank you." />
