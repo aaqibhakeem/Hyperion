@@ -15,7 +15,6 @@ interface GlowingEffectProps {
   disabled?: boolean;
   movementDuration?: number;
   borderWidth?: number;
-  children?: React.ReactNode;
 }
 const GlowingEffect = memo(
   ({

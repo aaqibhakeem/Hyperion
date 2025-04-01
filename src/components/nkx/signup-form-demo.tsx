@@ -63,7 +63,7 @@ export default function SignupFormDemo() {
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="subject" className="text-1xl">Subject</Label>
-          <Input id="subject" placeholder="One liner" type="text" name="Subject"/>
+          <Input id="subject" placeholder="The headline of your message" type="text" name="Subject"/>
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="content" className="text-1xl">Message</Label>

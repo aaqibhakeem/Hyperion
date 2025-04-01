@@ -1,6 +1,7 @@
 import { Container } from "../ui/container";
 import { Card } from "../ui/card";
 import Image from "next/image";
+import { GlareCard } from "../ui/glare-card";
 
 export function WhatIsNkx() {
   return (
@@ -29,59 +30,68 @@ export function WhatIsNkx() {
              we provide cutting-edge fintech solutions designed for the future.
             </p>
           </div>
+          <div className="relative w-full max-w-xl mx-auto">
+      <GlareCard 
+        className="bg-zinc-900"
+        width="w-full" // Use full width
+        // No aspect ratio specified will maintain natural height
+      >
+        <div className="border border-zinc-800 rounded-lg overflow-hidden shadow-lg p-6 h-full w-full">
 
-          <div className="relative">
-            {/* Trading illustration */}
-            <Card className="relative bg-zinc-900/60 backdrop-blur-sm border border-zinc-800 overflow-hidden p-8 rounded-lg">
-              <div className="mb-6">
-                <div className="flex items-center justify-between mb-4">
-                  <div>
-                    <div className="text-zinc-500 uppercase text-xs mb-1">PERSON</div>
-                    <div className="text-4xl font-bold text-white">01</div>
-                  </div>
-                  <div className="text-2xl text-zinc-600">↔</div>
-                  <div>
-                    <div className="text-zinc-500 uppercase text-xs mb-1">PERSON</div>
-                    <div className="text-4xl font-bold text-white">02</div>
-                  </div>
+          <div className="relative w-full max-w-xl mx-auto">
+            <div className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden shadow-lg p-6">
+              <div className="flex items-center justify-between mb-6">
+                <div>
+                  <span className="font-mono text-2xl font-bold text-zinc-100">
+                    <span className="text-[#cbfe00] tektur-font">Nuvikronix</span>
+                  </span>
+                  <div className="text-xs text-[#ffffff] tracking-wider mt-1">Technologies</div>
                 </div>
-
-                <div className="relative mt-10">
-                  <div className="grid grid-cols-2 gap-6">
-                    <div className="bg-zinc-800/40 border border-zinc-700/50 rounded-md p-3">
-                      <div className="text-xs text-zinc-500 mb-1">OFFER: 10,000 USDC</div>
-                      <div className="text-xs text-zinc-500">RECEIVE: 5.23 ETH</div>
-                      <div className="flex justify-between items-center mt-4">
-                        <div className="text-xs text-zinc-500">RATIO: 1,912:1</div>
-                        <button className="bg-[#cbfe00] text-black text-xs font-bold px-3 py-1 rounded">
-                          ACCEPT TRADE
-                        </button>
-                      </div>
-                    </div>
-                    <div className="bg-zinc-800/40 border border-zinc-700/50 rounded-md p-3 flex items-center justify-center">
-                      <div className="text-sm text-zinc-400">
-                        <Image
-                          src="/images/hover-vehicle.png"
-                          alt="Trade visualization"
-                          width={120}
-                          height={60}
-                          className="object-contain opacity-90"
-                        />
-                      </div>
-                    </div>
+                <div className="h-10 w-10 flex items-center justify-center rounded-full">
+                  <Image src="/images/logo.png" alt="Logo" width={40} height={40} className="object-cover" />
+                </div>
+              </div>
+              
+              {/* Tagline */}
+              <div className="mb-6">
+                <p className="text-zinc-400 text-sm border-l-2 border-[#cbfe00] pl-3">
+                  A Quantum Leap Forward For FinTech Innovation
+                  <span className="block mt-1 text-xs text-zinc-500">EST. 2023 • DECENTRALIZED • SECURE • POWERFUL</span>
+                </p>
+              </div>
+              
+              {/* Contact Info */}
+              <div className="grid grid-cols-2 gap-4 mb-4">
+                <div className="bg-zinc-800/40 border border-zinc-700/50 rounded-[20px] p-3">
+                  <div className="text-xs text-zinc-500 mb-1">CONTACT</div>
+                  <div className="text-sm text-zinc-300">kiran18oct1991@gmail.com</div>
+                </div>
+                <div className="bg-zinc-800/40 border border-zinc-700/50 rounded-[20px] p-3">
+                  <div className="text-xs text-zinc-500 mb-1">DIGITAL PRESENCE</div>
+                  <div className="text-sm text-zinc-300">nuvikronix.io</div>
+                </div>
+              </div>
+              
+              {/* QR Code Placeholder */}
+              <div className="flex justify-around items-center">
+                <div className="text-xs text-zinc-400 flex justify-center items-center">
+                  <span>UNIQUE VERIFICATION CODE</span>
+                </div>
+                <div className="w-16 h-16 bg-zinc-800 border border-zinc-700 flex items-center justify-center">
+                  <div className="w-12 h-12 grid grid-cols-10 grid-rows-10 gap-0.5">
+                    {Array.from({ length: 100 }).map((_, i) => (
+                      <div 
+                        key={i} 
+                        className={`bg-${Math.random() > 0.5 ? '[#cbfe00]' : 'transparent'}`}
+                      ></div>
+                    ))}
                   </div>
                 </div>
               </div>
-
-              <p className="text-zinc-400 text-sm mt-5">
-                Securely trade with others without the need for intermediaries. 
-                <span className="tektur-font text-[#cbfe00]" > Nuvikronix</span> <span className="text-[#ffffff] "> Technologies</span> ensures that your trades are secure and private.
-              </p>
-            </Card>
-
-            {/* Decorative elements */}
-            <div className="absolute -top-4 -left-4 w-8 h-8 border-t-2 border-l-2 border-[#cbfe00]/30" />
-            <div className="absolute -bottom-4 -right-4 w-8 h-8 border-b-2 border-r-2 border-[#cbfe00]/30" />
+            </div>
+            </div>
+            </div>
+      </GlareCard>
           </div>
         </div>
       </Container>
